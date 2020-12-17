@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_catalog">
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.gmbcode.gbook.ui.fragments.CatalogFragment"
+        android:label="@string/title_catalog"
+        tools:layout="@layout/fragment_catalog" />
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.gmbcode.gbook.ui.fragments.CategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_categories" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.gmbcode.gbook.ui.fragments.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_my_favorites"
+        android:name="com.gmbcode.gbook.ui.fragments.MyFavoritesFragment"
+        android:label="@string/title_my_favorites"
+        tools:layout="@layout/fragment_my_favorites" />
+    <fragment
+        android:id="@+id/navigation_mygbook"
+        android:name="com.gmbcode.gbook.ui.fragments.MyGBook"
+        android:label="@string/title_migbook"
+        tools:layout="@layout/fragment_my_g_book" />
+</navigation>
